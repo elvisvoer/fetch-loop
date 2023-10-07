@@ -1,5 +1,5 @@
-function createAFLoop(callback: Function, intervalMS: number) {
-  const delta = intervalMS;
+function createAFLoop(callback: Function, intervalMilliseconds: number) {
+  const delta = intervalMilliseconds;
   let lastTime = new Date().getTime();
   let requestId: number;
 
@@ -25,7 +25,6 @@ function createAFLoop(callback: Function, intervalMS: number) {
 
 export class FetchLoop {
   private queue: any[] = [];
-  private requestsPerMinute: number = 1;
 
   public fetch(
     input: RequestInfo | URL,
@@ -41,14 +40,16 @@ export class FetchLoop {
     });
   }
 
-  public start(rpm: number) {
-    this.requestsPerMinute = rpm;
+  public start(
+    requestsPerTimeInterval: number,
+    intervalMilliseconds: number = 1_000
+  ) {
     return createAFLoop(() => {
-      const items = this.queue.splice(0, this.requestsPerMinute);
+      const items = this.queue.splice(0, requestsPerTimeInterval);
       items.forEach(({ reject, resolve, input, init }) => {
         // global fetch
         fetch(input, init).then(resolve).catch(reject);
       });
-    }, 5_000);
+    }, intervalMilliseconds);
   }
 }
