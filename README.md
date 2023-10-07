@@ -1,6 +1,6 @@
 # fetch-loop
 
-[![npm version](https://badge.fury.io/js/fetch-loop.svg)](https://badge.fury.io/js/fetch-loop)
+![NPM version](https://img.shields.io/npm/v/fetch-loop)
 
 Simple abstraction over fetch to only permit a certain amount of requests per interval of time.
 
