@@ -1,12 +1,25 @@
 {
   "name": "fetch-loop",
+  "author": {
+    "name": "Elvis Adomnica"
+  },
+  "description": "Simple abstraction over fetch to only permit a certain amount of requests per minute.",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/fetch-loop.umd.cjs",
+  "module": "./dist/fetch-loop.js",
+  "exports": {
+    ".": {
+      "import": "./dist/fetch-loop.js",
+      "require": "./dist/fetch-loop.umd.cjs"
+    }
+  },
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "tsc && vite build"
   },
   "devDependencies": {
     "typescript": "^5.0.2",
