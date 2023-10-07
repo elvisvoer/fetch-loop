@@ -8,22 +8,10 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "files": [
-    "dist"
-  ],
-  "main": "./dist/fetch-loop.umd.cjs",
-  "module": "./dist/fetch-loop.js",
+  "module": "./lib/fetch-loop.js",
   "exports": {
     ".": {
-      "import": "./dist/fetch-loop.js",
-      "require": "./dist/fetch-loop.umd.cjs"
+      "import": "./lib/fetch-loop.js"
     }
-  },
-  "scripts": {
-    "build": "tsc && vite build"
-  },
-  "devDependencies": {
-    "typescript": "^5.0.2",
-    "vite": "^4.4.5"
   }
 }
