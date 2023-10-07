@@ -1,13 +1,13 @@
 {
   "name": "fetch-loop",
+  "version": "0.0.1",
+  "description": "Simple abstraction over fetch to only permit a certain amount of requests per time interval.",
   "author": {
     "name": "Elvis Adomnica",
     "url": "https://erranto.com"
   },
-  "description": "Simple abstraction over fetch to only permit a certain amount of requests per time interval.",
-  "private": false,
-  "version": "0.0.0",
   "type": "module",
+  "private": false,
   "module": "./lib/fetch-loop.js",
   "exports": {
     ".": {
