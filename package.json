@@ -2,7 +2,7 @@
   "name": "fetch-loop",
   "author": {
     "name": "Elvis Adomnica",
-    "url": "erranto.com"
+    "url": "https://erranto.com"
   },
   "description": "Simple abstraction over fetch to only permit a certain amount of requests per time interval.",
   "private": true,
