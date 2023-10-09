@@ -6,6 +6,10 @@
     "name": "Elvis Adomnica",
     "url": "https://erranto.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/elvisvoer/fetch-loop.git"
+  },
   "type": "module",
   "private": false,
   "module": "./lib/fetch-loop.js",
