@@ -32,3 +32,29 @@ const stop = fl.start(1, 1_000);
 // stop the loop after 5 seconds
 setTimeout(stop, 5_000);
 ```
+
+**NOTE:**
+
+Only one loop can be started per instance at any given time. Further calls to `start` will be ignored and
+the same instance of `stop` would be returned until the loop is stopped.
+
+```javascript
+import { FetchLoop } from "fetch-loop";
+
+// create new loop instance
+const fl = new FetchLoop();
+
+// start the loop
+const stop = fl.start(1, 1_000);
+
+// loop is already started: input args will be ignored and
+// the same instance will be returned (stop === otherStop)
+const otherStop = fl.start(2, 5_000);
+
+// stop the loop
+stop();
+
+// new loop: stop !== yetAnotherStop
+const yetAnotherStop = fl.start(2, 5_000);
+```
+
