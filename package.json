@@ -2,6 +2,12 @@
   "name": "fetch-loop",
   "version": "0.0.3",
   "description": "Simple abstraction over fetch to only permit a certain amount of requests per time interval.",
+  "keywords": [
+    "fetch",
+    "rate",
+    "limit",
+    "promise"
+  ],
   "author": {
     "name": "Elvis Adomnica",
     "url": "https://erranto.com"
@@ -10,6 +16,7 @@
     "type": "git",
     "url": "git://github.com/elvisvoer/fetch-loop.git"
   },
+  "license": "MIT",
   "type": "module",
   "private": false,
   "module": "./lib/fetch-loop.js",
