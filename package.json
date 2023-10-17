@@ -22,7 +22,8 @@
   "module": "./lib/fetch-loop.js",
   "exports": {
     ".": {
-      "import": "./lib/fetch-loop.js"
+      "import": "./lib/fetch-loop.js",
+      "types": "./lib/fetch-loop.d.ts"
     }
   }
 }
