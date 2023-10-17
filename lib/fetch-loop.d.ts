@@ -10,6 +10,6 @@ export class FetchLoop {
    */
   start(
     requestsPerTimeInterval: number,
-    intervalMilliseconds: number = 1_000
+    intervalMilliseconds: number,
   ): () => void;
 }
