@@ -1,12 +1,13 @@
 {
   "name": "fetch-loop",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Simple abstraction over fetch to only permit a certain amount of requests per time interval.",
   "keywords": [
     "fetch",
     "rate",
     "limit",
-    "promise"
+    "promise",
+    "request"
   ],
   "author": {
     "name": "Elvis Adomnica",
