@@ -1,7 +1,10 @@
+interface FetchLoopOptions {
+  intervalMilliseconds: number;
+  requestsPerInterval: number;
+}
+
 export class FetchLoop {
-  constructor(
-    options = { requestsPerInterval: number, intervalMilliseconds: number }
-  );
+  constructor(options?: FetchLoopOptions);
 
   /**
    * Has same interface as the browser default `fetch` function.
