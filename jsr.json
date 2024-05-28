@@ -1,0 +1,5 @@
+{
+  "name": "@elvis/fetch-loop",
+  "version": "1.0.1",
+  "exports": "./lib/fetch-loop.js"
+}
