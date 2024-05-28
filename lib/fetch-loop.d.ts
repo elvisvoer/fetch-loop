@@ -1,9 +1,14 @@
+/** FetchLoop config options. */
 interface FetchLoopOptions {
   intervalMilliseconds: number;
   requestsPerInterval: number;
 }
 
+/**
+ * A class representing a simple abstraction over `fetch`.
+ */
 export class FetchLoop {
+  /** Creates a new FetchLoop instance. */
   constructor(options?: FetchLoopOptions);
 
   /**
