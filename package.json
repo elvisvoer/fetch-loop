@@ -1,6 +1,6 @@
 {
   "name": "fetch-loop",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple abstraction over fetch to only permit a certain amount of requests per time interval.",
   "keywords": [
     "fetch",
